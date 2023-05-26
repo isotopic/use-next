@@ -7,8 +7,8 @@ export default function Header(){
             <Image
                 src="/images/toolbox.png"
                 alt="Tool Box"
-                width={105}
-                height={105}
+                width={75}
+                height={75}
                 priority
                 /> 
                 <p className={styles.logo_subtitle}>USE NEXT</p>

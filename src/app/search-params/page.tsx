@@ -10,8 +10,7 @@ export default function Page() {
       <div>
         <h3>/search-params/page.tsx</h3>
         <code>
-          searchParams.get(id)
-         <br/><b>{searchParams.get('id')}</b>
+         id: <b>{searchParams.get('id')}</b>
         </code>
       </div>
     </main>

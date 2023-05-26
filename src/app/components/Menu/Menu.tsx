@@ -16,6 +16,7 @@ export default function Menu(){
         {src:'/search-params?id=1', name: 'Search params'},
         {src:'/dynamic/1', name: 'Dynamic path'},
         {src:'/special-files', name: 'Special files'},
+        {src:'/client-side-fetching', name: 'Client-side fetching'},
     ]
     return (
         <div className={styles.menu}> 
