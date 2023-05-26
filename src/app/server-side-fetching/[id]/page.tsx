@@ -12,26 +12,18 @@ type User = {
 }
 
 export default async function Page({params}: any) {
-
   const user:User = await getUser(params.id);
-
+  
   return (
-    <main>
+    <main className="grid-border" style={{padding: '10px'}}>
       <div>
-
         <h3>/server-side-fetching/[id]/page.tsx</h3>
-
-        <br/>
-
         <code>
         ID: <b>{user.id}</b><br/>
         Name: <b>{user.name}</b><br/>
         email: <b>{user.email}</b><br/>
         Website: <b>{user.website}</b><br/>
         </code>
-
-
-
       </div>
     </main>
   )

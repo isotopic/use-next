@@ -38,7 +38,7 @@ code{
   grid-template-columns: 0.8fr 1fr 1fr 1fr;
 }
 
-.grid > div{
+.grid > div, .grid-border{
   border-radius: 10px;
   border: 1px dashed #999;
 }
