@@ -60,7 +60,7 @@ const URWGeometric = localFont({
 })
 
 export const metadata = {
-  title: 'Toolbox',
+  title: 'UseNext',
   description: 'NextJS utilities',
 }
 

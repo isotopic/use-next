@@ -11,7 +11,7 @@ export default function Header(){
                 height={105}
                 priority
                 /> 
-                <p className={styles.logo_subtitle}>NEXT TOOLBOX</p>
+                <p className={styles.logo_subtitle}>USE NEXT</p>
         </div>
     )
 }
