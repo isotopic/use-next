@@ -24,7 +24,7 @@ export default function Page({ params }:any) {
         <br/>
 
         <ul>
-          {items.slice(0, 10).map((item: Item) => {
+          {items.map((item: Item) => {
             return <li key={item.id}><b>{item.id}.</b> {item.title}</li>
           })}
         </ul>

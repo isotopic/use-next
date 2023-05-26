@@ -2,7 +2,7 @@
 
 async function fakeLoadData(){
   await new Promise(resolve => setTimeout(resolve, 2000));
-  return [1,2,3,4];
+  return [1,2,3,4,5,6,7,8,9,10];
 }
 
 export default async function Page() {
