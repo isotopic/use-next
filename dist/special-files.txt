@@ -1,0 +1,21 @@
+1:HL["/_next/static/media/01748c797c05b9c4-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/5fbada582e76e75d-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/media/7c7a786b3701a400-s.p.woff2",{"as":"font","type":"font/woff2"}]
+4:HL["/_next/static/media/9880445ceb519494-s.p.woff2",{"as":"font","type":"font/woff2"}]
+5:HL["/_next/static/media/9c76f244d10cfc38-s.p.woff2",{"as":"font","type":"font/woff2"}]
+6:HL["/_next/static/media/a6118ed4e4ca97b8-s.p.woff2",{"as":"font","type":"font/woff2"}]
+7:HL["/_next/static/media/a732a9f235ece446-s.p.woff2",{"as":"font","type":"font/woff2"}]
+8:HL["/_next/static/media/b525a1e043779340-s.p.woff2",{"as":"font","type":"font/woff2"}]
+9:HL["/_next/static/media/d5bf1e14c6231456-s.p.woff2",{"as":"font","type":"font/woff2"}]
+a:HL["/_next/static/media/dc07f22938966155-s.p.woff2",{"as":"font","type":"font/woff2"}]
+b:HL["/_next/static/css/e29598026741f6ec.css",{"as":"style"}]
+0:[[["",{"children":["special-files",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$Lc",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e29598026741f6ec.css","precedence":"next"}]],["$Ld",["$","meta",null,{"name":"next-size-adjust"}]]]]]
+e:I{"id":"2011","chunks":["452:static/chunks/452-4f388a30aba7ca56.js","185:static/chunks/app/layout-01f3bf89fcd5ceed.js"],"name":"","async":false}
+f:I{"id":"5892","chunks":["452:static/chunks/452-4f388a30aba7ca56.js","185:static/chunks/app/layout-01f3bf89fcd5ceed.js"],"name":"","async":false}
+10:I{"id":"9544","chunks":["272:static/chunks/webpack-02e83a9aa627b885.js","667:static/chunks/2443530c-017f53e7977b1bcd.js","139:static/chunks/139-7198957ca0606484.js"],"name":"","async":false}
+11:I{"id":"99","chunks":["272:static/chunks/webpack-02e83a9aa627b885.js","667:static/chunks/2443530c-017f53e7977b1bcd.js","139:static/chunks/139-7198957ca0606484.js"],"name":"","async":false}
+12:I{"id":"8536","chunks":["257:static/chunks/app/special-files/error-f9d1be4497bce2e8.js"],"name":"","async":false}
+13:I{"id":"9457","chunks":["272:static/chunks/webpack-02e83a9aa627b885.js","667:static/chunks/2443530c-017f53e7977b1bcd.js","139:static/chunks/139-7198957ca0606484.js"],"name":"","async":false}
+14:I{"id":"2960","chunks":["208:static/chunks/app/special-files/page-b6620ace53ba72a0.js"],"name":"","async":false}
+c:[["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_3bcd86","children":["$","div",null,{"className":"grid","children":[["$","div",null,{"className":"header_header__Va_ow","children":[["$","$Le",null,{"src":"/images/toolbox.png","alt":"Tool Box","width":105,"height":105,"priority":true}],["$","p",null,{"className":"header_logo_subtitle__SEDmu","children":"NEXT TOOLBOX"}]]}],["$","$Lf",null,{}],["$","div",null,{"className":"page","children":["$","$L10",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L11",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","asNotFound":"$undefined","childProp":{"current":["$","$L10",null,{"parallelRouterKey":"children","segmentPath":["children","special-files","children"],"error":"$12","errorStyles":[],"loading":"Loading...","loadingStyles":[],"hasLoading":true,"template":["$","$L11",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","asNotFound":"$undefined","childProp":{"current":[["$","$L13",null,{"propsForComponent":{"params":{}},"Component":"$14"}],null],"segment":"__PAGE__"},"styles":[]}],"segment":"special-files"},"styles":[]}]}],["$","div",null,{"className":"component-area footer_footer__Uv1gf","children":["$","p",null,{"children":"Footer.tsx"}]}]]}]}]}],null]
+d:[[["$","meta",null,{"charSet":"utf-8"}],["$","title",null,{"children":"Toolbox"}],["$","meta",null,{"name":"description","content":"NextJS utilities"}],null,null,null,null,null,null,null,null,["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1"}],null,null,null,null,null,null,null,null,null,null,[]],[null,null,null,null],null,null,[null,null,null,null,null],null,null,null,null,[null,[["$","link",null,{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}]],[],null]]
