@@ -19,7 +19,7 @@ const handler = NextAuth({
               // const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
               
               try{
-                const res = await fetch("http://localhost:3000/api/login", {
+                const res = await fetch(`${process.env.VERCEL_URL}${process.env.LOGIN_PATH}`, {
                   method: "POST",
                   headers: {
                     "Content-Type":"application/json",
