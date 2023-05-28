@@ -18,6 +18,7 @@ export default function Menu(){
         {src:'/special-files', name: 'Special files'},
         {src:'/client-side-fetching', name: 'Client-side fetching'},
         {src:'/server-side-fetching', name: 'Server-side fetching'},
+        {src:'/protected', name: 'Protected'},
     ]
     return (
         <div className={styles.menu}> 

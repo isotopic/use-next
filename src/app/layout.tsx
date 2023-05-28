@@ -3,6 +3,7 @@ import Header from  './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import localFont  from 'next/font/local'
 import Menu from './components/Menu/Menu'
+import Providers from './components/Providers'
 
 const URWGeometric = localFont({
   src: [
@@ -68,12 +69,16 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={URWGeometric.className}>
-        <div className="grid">
-          <Header/>
-          <Menu/>
-          <div className="page">{children}</div>
-          <Footer/> 
-        </div>
+          <div className="grid">
+            <Providers>
+              <Header/>
+              <Menu/>
+              <div className="page">
+                {children}
+              </div>
+              <Footer/> 
+            </Providers>
+          </div>
       </body>
     </html>
   )
