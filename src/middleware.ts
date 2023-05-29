@@ -1,16 +1,3 @@
+export { default } from "next-auth/middleware"
 
-import { withAuth } from "next-auth/middleware";
-import { NextRequest, NextResponse } from "next/server";
-
-export default withAuth(
-    {
-        callbacks: {
-            authorized: ({ token }) => !!token,
-        }
-    }
-)
-
-export const config = {
-    matcher: ["/protected/:path*"]
-}
-
+export const config = { matcher: ["/protected"] }
