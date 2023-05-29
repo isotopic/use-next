@@ -24,7 +24,7 @@ export default function Header(){
             </div>
             <div>
                 {session?.user ?
-                    <a onClick={() => signOut()}>Hello, {session.user.firstName}. [Sign out]</a>
+                    <a onClick={() => signOut()}>Hello, {session.user.email}. [Sign out]</a>
                     :
                     <a onClick={() => signIn()}> [Sign in]</a>
                 }
