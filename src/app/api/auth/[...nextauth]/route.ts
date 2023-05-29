@@ -44,6 +44,7 @@ const handler = NextAuth({
                 return user
 
               }catch(e){
+                console.log('Error on api/auth/nextauth/route.ts');
                 console.log(e);
                 return null
 

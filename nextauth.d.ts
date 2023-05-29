@@ -1,3 +1,4 @@
+/*
 export enum Role {
     user = "user",
     admin = "admin",
@@ -26,3 +27,4 @@ declare module "next-auth/jwt" {
       token: string;
     }
   }
+  */

@@ -21,6 +21,7 @@ export async function POST(request: Request){
         return new Response(JSON.stringify(user));
 
     }catch(e) {
+        console.log('Error on api/login');
         console.log(e);
         
         return new Response(JSON.stringify(null));
