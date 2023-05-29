@@ -55,16 +55,21 @@ const handler = NextAuth({
     ],
     callbacks: {
       async jwt({ token, user }) {
-        /* Step 1: include custom user properties inside token */
+        console.log('======================== config callback: JWT');
+        console.log(token);
+        
         return {...token, ...user};
       },
       async session({ session, token }) {
-        /* Step 2: update the session.user based on the token object */
+        console.log('======================== config callback: SESSION');
+        
+        console.log(session);
+        console.log(token);
+        
         session.user = token as any;
         return session;
       },
     },
-    secret: process.env.NEXTAUTH_SECRET
 });
 
 export { handler as GET, handler as POST}
