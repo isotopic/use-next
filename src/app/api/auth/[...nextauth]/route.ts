@@ -4,7 +4,6 @@ import CredentialsProvider from "next-auth/providers/credentials";
 
 function getLoginURL(){
   console.log('secret', process.env.NEXTAUTH_SECRET);
-  
   let url = process.env.VERCEL_URL + '' + process.env.LOGIN_PATH;
   if(!url.startsWith('http')){
     return 'https://' + url;
@@ -53,6 +52,7 @@ const handler = NextAuth({
             }
           })
     ],
+    /*
     callbacks: {
       async jwt({ token, user }) {
         console.log('======================== config callback: JWT');
@@ -70,6 +70,7 @@ const handler = NextAuth({
         return session;
       },
     },
+    */
 });
 
 export { handler as GET, handler as POST}
