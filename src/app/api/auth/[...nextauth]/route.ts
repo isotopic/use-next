@@ -57,7 +57,7 @@ const handler = NextAuth({
       strategy: "jwt",
     },
     pages: {
-      signIn: "/dynamic",
+      signIn: "/api/auth",
     },
     callbacks: {
       async jwt({ token }) {
