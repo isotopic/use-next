@@ -11,7 +11,11 @@ export default async function Page() {
   return (
     <main>
       <div>
-        <h3>/special-files/page.tsx</h3>
+        <div className="page-info">
+          <h2>File conventions <p>/special-files/page.tsx</p></h2>
+          <p>Example of <a target="_blank" href="https://nextjs.org/docs/app/api-reference/file-conventions">file conventions</a>.</p>
+        </div>
+      
         <code>loading.tsx<br/>error.tsx</code>
 
         <br/>

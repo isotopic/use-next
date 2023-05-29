@@ -18,13 +18,13 @@ export default function Page({ params }:any) {
     <main className={styles.main}>
       <div>
 
-        <h3>/client-side-fetching/page.tsx</h3>
-
-        <br/>
-        <br/>
+        <div className="page-info">
+          <h2>Client-side fetching <p>/client-side-fetching/page.tsx</p></h2>
+          <p>Example of client-side <a target="_blank" href="https://nextjs.org/docs/app/building-your-application/data-fetching">data fetching</a>.</p>
+        </div>
 
         <ul>
-          {items.map((item: Item) => {
+          {items.slice(0,10).map((item: Item) => {
             return <li key={item.id}><b>{item.id}.</b> {item.title}</li>
           })}
         </ul>

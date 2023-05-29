@@ -19,9 +19,10 @@ export default async function Layout({ children }: any) {
     <main className={styles.main}>
       <div>
 
-        <h3>/server-side-fetching/page.tsx</h3>
-
-        <br/>
+        <div className="page-info">
+          <h2>Server-side fetching <p>/server-side-fetching/page.tsx</p></h2>
+          <p>Example of server-side <a target="_blank" href="https://nextjs.org/docs/app/building-your-application/data-fetching">data fetching</a>.</p>
+        </div>
 
         <ul>
         {users.map((item: User) => {

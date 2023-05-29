@@ -15,10 +15,11 @@ export default function Menu(){
         {src:'/', name: 'Home'},
         {src:'/search-params?id=1', name: 'Search params'},
         {src:'/dynamic/1', name: 'Dynamic path'},
-        {src:'/special-files', name: 'Special files'},
+        {src:'/file-conventions', name: 'File conventions'},
         {src:'/client-side-fetching', name: 'Client-side fetching'},
         {src:'/server-side-fetching', name: 'Server-side fetching'},
-        {src:'/protected', name: 'Protected'},
+        {src:'/restricted-client', name: 'Restricted on client-side'},
+        {src:'/restricted-server', name: 'Restricted on server-side'},
     ]
     return (
         <div className={styles.menu}> 

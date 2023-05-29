@@ -1,7 +1,7 @@
 .header{
     padding: 20px 30px;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 200px 1fr 250px;
 }
 
 .logo_subtitle{
@@ -14,9 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    text-align: right;
 }
 
 .header > div:nth-child(3) > a{
-   font-weight: 600;
+   font-weight: 500;
    cursor: pointer;
 }

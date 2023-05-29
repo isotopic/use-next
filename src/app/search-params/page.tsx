@@ -8,7 +8,10 @@ export default function Page() {
   return (
     <main>
       <div>
-        <h3>/search-params/page.tsx</h3>
+        <div className="page-info">
+          <h2>Search params <p>/search-params/page.tsx</p></h2>
+          <p>Example of <a target="_blank" href="https://nextjs.org/docs/app/api-reference/functions/use-search-params">useSearchParams</a>.</p>
+        </div>
         <code>
          id: <b>{searchParams.get('id')}</b>
         </code>
