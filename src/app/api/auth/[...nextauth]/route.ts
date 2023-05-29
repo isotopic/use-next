@@ -61,7 +61,7 @@ const handler = NextAuth({
         /* Step 1: include custom user properties inside token */
         return {...token, ...user};
       },
-      session({ session, token }) {
+      async session({ session, token }) {
         /* Step 2: update the session.user based on the token object */
         session.user = token as any;
         return session;
