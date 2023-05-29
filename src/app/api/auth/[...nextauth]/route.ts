@@ -53,9 +53,6 @@ const handler = NextAuth({
             }
           })
     ],
-    session: {
-      strategy: "jwt"
-    },
     callbacks: {
       async jwt({ token, user }) {
         /* Step 1: include custom user properties inside token */
