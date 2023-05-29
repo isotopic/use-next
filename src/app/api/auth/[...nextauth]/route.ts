@@ -1,6 +1,15 @@
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 
+
+function getLoginURL(){
+  let url = process.env.VERCEL_URL + '' + process.env.LOGIN_PATH;
+  if(!url.startsWith('http')){
+    return 'https://' + url;
+  }
+  return url;
+}
+
 const handler = NextAuth({
     providers: [
         CredentialsProvider({
@@ -18,11 +27,8 @@ const handler = NextAuth({
               // Add logic here to look up the user from the credentials supplied
               // const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
               
-              try{
-                console.log("VERCEL_URL", process.env.VERCEL_URL);
-                console.log("NEXTAUTH_SECRET", process.env.NEXTAUTH_SECRET);
-                
-                const res = await fetch(`${process.env.VERCEL_URL}${process.env.LOGIN_PATH}`, {
+              try{ 
+                const res = await fetch(getLoginURL(), {
                   method: "POST",
                   headers: {
                     "Content-Type":"application/json",
