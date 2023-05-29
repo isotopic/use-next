@@ -6,6 +6,9 @@ const nextConfig = {
     */
     reactStrictMode: true,
     images: { unoptimized: true },
+    experimental: {
+        appdir: true
+    }
 }
 
 module.exports = nextConfig
