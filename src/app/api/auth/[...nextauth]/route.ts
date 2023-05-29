@@ -19,6 +19,9 @@ const handler = NextAuth({
               // const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
               
               try{
+                console.log("VERCEL_URL", process.env.VERCEL_URL);
+                console.log("NEXTAUTH_SECRET", process.env.NEXTAUTH_SECRET);
+                
                 const res = await fetch(`${process.env.VERCEL_URL}${process.env.LOGIN_PATH}`, {
                   method: "POST",
                   headers: {
