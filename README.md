@@ -12,7 +12,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-
 ## Deploy
 
 Committing on branch 'main' will trigger a deploy to https://use-next.vercel.app/
@@ -23,4 +22,3 @@ Deployment status: https://vercel.com/isotopic/use-next/deployments
 
 umcgourty9
 i0xzpX
-

@@ -1,12 +1,12 @@
-.main ul{
-    list-style: none;
+.main ul {
+  list-style: none;
 }
 
-.main ul li{
-    font-weight: 600;
-    cursor: pointer;
-    opacity: 0.4;
+.main ul li {
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.4;
 }
-.main ul li:hover{
-    opacity: 1; 
+.main ul li:hover {
+  opacity: 1;
 }
