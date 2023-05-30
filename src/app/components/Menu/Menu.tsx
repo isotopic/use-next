@@ -47,13 +47,13 @@ export default function Menu() {
     <div className={styles.menu}>
       {items.map((section, i) => {
         return (
-          <>
+          <div key={i}>
             {i > 0 && <span>{section.name}</span>}
-            <ul key={`ul-${i}`}>
-              {section.items.map((item) => {
+            <ul>
+              {section.items.map((item, j) => {
                 return (
                   <li
-                    key={`ul-${i}`}
+                    key={item.src}
                     className={
                       isActive(pathname, item.src) ? styles.active : ""
                     }
@@ -63,7 +63,7 @@ export default function Menu() {
                 );
               })}
             </ul>
-          </>
+          </div>
         );
       })}
     </div>
