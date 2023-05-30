@@ -6,12 +6,12 @@ import { useState } from "react";
 
 export default function Page({ params }: any) {
   const { items, isLoading, error } = useUsers();
-  const [ user, setUser ] = useState<User>();
-  const [ loadingDetail, setLoadingDetail ] = useState(false);
+  const [user, setUser] = useState<User>();
+  const [loadingDetail, setLoadingDetail] = useState(false);
 
   if (isLoading) return "Loading...";
   if (error) return "Error";
-  
+
   type User = {
     id: number;
     firstName: string;
@@ -22,11 +22,11 @@ export default function Page({ params }: any) {
     domain: string;
     image: string;
   };
-  
-  async function clickItem(id:number){
-    setUser(undefined)
+
+  async function clickItem(id: number) {
+    setUser(undefined);
     setLoadingDetail(true);
-    const response = await fetch("https://dummyjson.com/users/"+id);
+    const response = await fetch("https://dummyjson.com/users/" + id);
     const data = await response.json();
     setUser(data);
     setLoadingDetail(false);
@@ -54,31 +54,37 @@ export default function Page({ params }: any) {
         <ul>
           {items.slice(0, 10).map((item: User) => {
             return (
-              <li key={item.id} onClick={() => {clickItem(item.id)}}>
+              <li
+                key={item.id}
+                onClick={() => {
+                  clickItem(item.id);
+                }}
+              >
                 <b>{item.id}.</b> {item.firstName} {item.lastName}
               </li>
             );
           })}
         </ul>
 
-        {user && <code>
-        ID: <b>{user.id}</b>
-          <br />
-          Name: <b>{user.firstName}</b>
-          <br />
-          email: <b>{user.email}</b>
-          <br />
-          username: <b>{user.username}</b>
-          <br />
-          password: <b>{user.password}</b>
-          <br />
-          website: <b>{user.domain}</b>
-          <br />
-        </code>}
+        {user && (
+          <code>
+            ID: <b>{user.id}</b>
+            <br />
+            Name: <b>{user.firstName}</b>
+            <br />
+            email: <b>{user.email}</b>
+            <br />
+            username: <b>{user.username}</b>
+            <br />
+            password: <b>{user.password}</b>
+            <br />
+            website: <b>{user.domain}</b>
+            <br />
+          </code>
+        )}
 
-        <br/>
-        {!!loadingDetail && 'Loading details...'}
-
+        <br />
+        {!!loadingDetail && "Loading details..."}
       </div>
     </main>
   );

@@ -23,7 +23,7 @@ export default async function Page({ params }: any) {
       <div>
         <h3>/server-side-fetching/[id]/page.tsx</h3>
         <code>
-        ID: <b>{user.id}</b>
+          ID: <b>{user.id}</b>
           <br />
           Name: <b>{user.firstName}</b>
           <br />
