@@ -20,6 +20,7 @@ export default function Menu(){
         {src:'/server-side-fetching', name: 'Server-side fetching'},
         {src:'/restricted-client', name: 'Restricted on client-side'},
         {src:'/restricted-server', name: 'Restricted on server-side'},
+        {src:'/restricted-server-role', name: 'Restricted on server-side with role'},
     ]
     return (
         <div className={styles.menu}> 

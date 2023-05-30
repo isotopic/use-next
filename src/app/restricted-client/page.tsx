@@ -14,7 +14,7 @@ export default function Page() {
 
         {session ?
           <div>
-            <p>You are signed in.</p>
+            <p>You are signed in. This page is restricted to signed users via <i>useSession()</i>.</p>
             <code>
             {JSON.stringify(session?.user)}
             </code>
