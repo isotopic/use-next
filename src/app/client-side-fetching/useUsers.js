@@ -1,14 +1,14 @@
 import useSWR from "swr";
 
 function useUsers() {
-  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  const fetcher = async (...args) => fetch(...args).then((res) => res.json());
   const { data, isLoading, error } = useSWR(
     `https://dummyjson.com/users`,
     fetcher
   );
 
   return {
-    items: data.users,
+    users: data,
     isLoading,
     error,
   };

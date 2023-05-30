@@ -5,7 +5,7 @@ import { useUsers } from "./useUsers";
 import { useState } from "react";
 
 export default function Page({ params }: any) {
-  const { items, isLoading, error } = useUsers();
+  const { users, isLoading, error } = useUsers();
   const [user, setUser] = useState<User>();
   const [loadingDetail, setLoadingDetail] = useState(false);
 
@@ -27,8 +27,8 @@ export default function Page({ params }: any) {
     setUser(undefined);
     setLoadingDetail(true);
     const response = await fetch("https://dummyjson.com/users/" + id);
-    const data = await response.json();
-    setUser(data);
+    const userDetail = await response.json();
+    setUser(userDetail);
     setLoadingDetail(false);
   }
 
@@ -52,7 +52,7 @@ export default function Page({ params }: any) {
         </div>
 
         <ul>
-          {items.slice(0, 10).map((item: User) => {
+          {users.users.slice(0, 10).map((item: User) => {
             return (
               <li
                 key={item.id}
