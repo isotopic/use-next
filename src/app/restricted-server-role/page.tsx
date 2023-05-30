@@ -13,7 +13,7 @@ export default function Page() {
         </div>
 
         <div>
-          <p>You are signed in. This page is restricted to signed users with role 'admin' via <i>src/middleware.ts</i>.<br/>Note: Female users are manually set 'admins' on [...mextauth] for testing this feature.</p>
+          <p>You are signed in. This page is restricted to signed users with role &apos;admin&apos; via <i>src/middleware.ts</i>.<br/>Note: Female users are manually set &apos;admins&apos; on [...mextauth] for testing this feature.</p>
           <code>
           {JSON.stringify(session?.user)}
           </code>
