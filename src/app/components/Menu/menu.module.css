@@ -10,8 +10,24 @@
     background-color: rgba(0,0,0,0);
     border-radius: 8px;
     padding: 6px 10px;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a{
+    display: block;
+}
+
+.menu ul li:hover{
+    background-color: rgba(0,0,0,0.05);
 }
 
 .menu ul li.active{
     background-color: rgba(0,0,0,0.1);
+}
+
+.menu span{
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 0.9em;
+    color: #aaa;
 }
