@@ -11,15 +11,15 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <div>
-      <Link href="/">
-        <Image
-          src="/images/toolbox.png"
-          alt="Tool Box"
-          width={75}
-          height={75}
-          priority
-        />
-        <p className={styles.logo_subtitle}>USE NEXT</p>
+        <Link href="/">
+          <Image
+            src="/images/toolbox.png"
+            alt="Tool Box"
+            width={75}
+            height={75}
+            priority
+          />
+          <p className={styles.logo_subtitle}>USE NEXT</p>
         </Link>
       </div>
       <div></div>
