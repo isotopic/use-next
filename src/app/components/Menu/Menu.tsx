@@ -53,7 +53,7 @@ export default function Menu() {
               {section.items.map((item) => {
                 return (
                   <li
-                    key={item.src}
+                    key={`ul-${i}`}
                     className={
                       isActive(pathname, item.src) ? styles.active : ""
                     }

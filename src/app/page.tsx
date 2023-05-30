@@ -13,13 +13,16 @@ export default function Home() {
           basic features like routing, layouts, server components, data fetching
           variations and anthentication.
         </p>
-        <br />
+
         <p>
-          Note: External data is loaded from{" "}
-          <a target="_blank" href="https://dummyjson.com/docs">
+          External data is loaded from <a target="_blank" href="https://dummyjson.com/docs">
             dummyjson.com
           </a>
           , including users and login information.
+        </p>
+
+        <p>
+          Commits on branch "main" will trigger deployments on production: <a target="_blank" href="https://use-next.vercel.app/">use-next.vercel.app</a>
         </p>
       </div>
     </main>
