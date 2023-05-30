@@ -5,10 +5,7 @@ const nextConfig = {
     distDir: 'dist',
     */
     reactStrictMode: true,
-    images: { unoptimized: true },
-    experimental: {
-        appdir: true
-    }
+    images: { unoptimized: true }
 }
 
 module.exports = nextConfig

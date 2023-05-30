@@ -3,8 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 
 
 function getLoginURL(){
-  console.log('secret', process.env.NEXTAUTH_SECRET);
-  let url = process.env.VERCEL_URL + '' + process.env.LOGIN_PATH;
+  const url = process.env.VERCEL_URL + '' + process.env.LOGIN_PATH;
   if(!url.startsWith('http')){
     return 'https://' + url;
   }
@@ -14,50 +13,35 @@ function getLoginURL(){
 const handler = NextAuth({
     providers: [
         CredentialsProvider({
-            // The name to display on the sign in form (e.g. "Sign in with...")
             name: "Sign in",
-            // `credentials` is used to generate a form on the sign in page.
-            // You can specify which fields should be submitted, by adding keys to the `credentials` object.
-            // e.g. domain, username, password, 2FA token, etc.
-            // You can pass any HTML attribute to the <input> tag through the object.
             credentials: {
               username: { label: "Username", type: "text", placeholder: "username" },
               password: { label: "Password", type: "password" }
             },
             async authorize(credentials) {
-              // Add logic here to look up the user from the credentials supplied
-              // const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
-              
-              try{ 
-                const res = await fetch(getLoginURL(), {
-                  method: "POST",
-                  headers: {
-                    "Content-Type":"application/json",
-                  },
-                  body: JSON.stringify({
-                    "username": credentials?.username,
-                    "password": credentials?.password
-                  })
-                }) 
-                const user = await res.json();
-                user.name = user.firstName;
+              const res = await fetch(getLoginURL(), {
+                method: "POST",
+                headers: {
+                  "Content-Type":"application/json",
+                },
+                body: JSON.stringify({
+                  "username": credentials?.username,
+                  "password": credentials?.password
+                })
+              }) 
+              const user = await res.json();
+              user.name = user.firstName;
+
+              if (res.ok && user) {
                 return user
-
-              }catch(e){
-                console.log('Error on api/auth/nextauth/route.ts');
-                console.log(e);
-                return null
-
               }
               
+              return null
             }
           })
     ],
     session: {
       strategy: "jwt",
-    },
-    pages: {
-      signIn: "/api/auth",
     },
     callbacks: {
       async jwt({ token }) {
