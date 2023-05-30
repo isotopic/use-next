@@ -2,13 +2,20 @@ import styles from "./page.module.css";
 import Link from "next/link";
 
 async function getUsers() {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
-  return res.json();
+  const res = await fetch(`https://dummyjson.com/users`);
+  const parsed = await res.json();
+  return parsed.users;
 }
 
 type User = {
   id: number;
-  name: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  username: string;
+  password: string;
+  domain: string;
+  image: string;
 };
 
 export default async function Layout({ children }: any) {
@@ -34,11 +41,11 @@ export default async function Layout({ children }: any) {
         </div>
 
         <ul>
-          {users.map((item: User) => {
+          {users.slice(0, 10).map((item: User) => {
             return (
               <li key={item.id}>
                 <Link href={`/server-side-fetching/${item.id}`}>
-                  <b>{item.id}.</b> {item.name}
+                  <b>{item.id}.</b> {item.firstName} {item.lastName}
                 </Link>
               </li>
             );

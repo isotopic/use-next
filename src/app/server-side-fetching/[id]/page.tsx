@@ -23,13 +23,17 @@ export default async function Page({ params }: any) {
       <div>
         <h3>/server-side-fetching/[id]/page.tsx</h3>
         <code>
-          ID: <b>{user.id}</b>
+        ID: <b>{user.id}</b>
           <br />
           Name: <b>{user.firstName}</b>
           <br />
           email: <b>{user.email}</b>
           <br />
-          Website: <b>{user.domain}</b>
+          username: <b>{user.username}</b>
+          <br />
+          password: <b>{user.password}</b>
+          <br />
+          website: <b>{user.domain}</b>
           <br />
         </code>
       </div>
